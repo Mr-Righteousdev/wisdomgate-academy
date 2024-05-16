@@ -1,0 +1,79 @@
+header {
+    background-image: url(../images/pexels-karolina-grabowska-4218858.jpg);
+}
+
+main {
+    padding-inline: 25px;
+}
+
+form {
+    clear: left;
+    padding-inline: 25px;
+}
+
+main h2 {
+    font-size :3rem;
+    color: blue;
+    margin-left: 12px;
+    margin-block: 20px;
+}
+
+form>p {
+    padding-block: 5px;
+    font-size: 1.1rem;
+}
+
+.minor-titles {
+    background-color: rgba(128, 128, 128, 0.37);
+    padding-block: 5px;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+input {
+    padding: 8px;
+}
+
+.studentfirstname, .studentlastname {
+    width: 30%;
+}
+
+.mailing-title {
+    margin-block: 15px;
+}
+
+form select {
+    width: 25%;
+    padding: 8px;
+    font-size: 1.1rem;
+}
+
+.postal {
+    width: 5%;
+    padding: 6px;
+}
+
+.submit-btn {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .studentfirstname, .studentlastname {
+        width: 100%;
+    }
+
+    form select {
+        width: 100%;
+    }
+
+    .postal {
+        width: 80%;
+    }
+}

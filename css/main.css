@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height: 650px;
+    background-image: url(../images/pexels-gustavo-fring-4172988.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background-color: blue;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s ease-in-out, opacity .4s ease-in-out;
+}
+
+.header-head:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-head div {
+    overflow: hidden;
+}
+
+.header-head div a {
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(230, 230, 230);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+    position: relative;
+    
+}
+
+.header-head div a::after,
+.cont-lst li::after {
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    padding-block: 1px;
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+.header-head div a:hover::after,
+.cont-lst li:hover::after {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+.img-icon-holder {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    z-index: 5;
+}
+
+.img-icon-holder:hover ~ .header-head {
+    visibility: visible;
+    opacity: 1;
+}
+
+.blurry {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(24, 24, 24, 0.452);
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.blurry h1 {
+    font-size: 5rem;
+    color: rgb(230, 230, 230);
+    transition: transform .3s ease-in-out;
+}
+
+.blurry h1:hover {
+    transform: scale(1.1);
+}
+
+.blurry h2 {
+    font-size: 3rem;
+    color: rgb(230, 230, 230);
+}
+
+.title-div {
+    text-align: center;
+    margin-block: 15px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.hero article{
+    width: 50%;
+    height: 400px;
+    position: relative;
+}
+
+.hero article div {
+    width: 500px;
+    line-height: 25px;
+    padding-inline: 20px;
+    background-color: rgba(14, 71, 194, 0.808);
+    position: absolute;
+    top: 350px;
+    left: 200px;
+}
+
+.hero article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.honors {
+    margin-top: 90px;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 230px;
+    background-color: rgba(14, 71, 194, 0.808);
+}
+
+.honor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 0;
+}
+
+.flex-honor {
+    display: flex;
+}
+
+/* make believe juice wrld */
+
+.honor h2 {
+    font-size: 70px;
+}
+
+.hon-1, .hon-2 {
+    border-right: 1px groove yellow;
+}
+
+.gallery-ttle {
+    margin-block: 25px;
+}
+
+.gallery {
+    max-height: 350px;
+    padding-inline: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 1fr 40px;
+}
+
+.gallery div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid rgb(206, 206, 206);
+}
+
+.gallery-div1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.gallery-div2 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.gallery-div3 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.gallery-div4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.flexer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-intro {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto;
+}
+
+.news-list {
+    list-style: none;
+    background-color: rgba(180, 180, 180, 0.829);
+    padding-left: 25px;
+    padding-top: 4px;
+}
+
+.news-list li{
+    padding-block: 15px;
+    font-weight: 600;
+}
+
+.news-ttle, .news2 {
+    border-bottom: 1px solid yellow;
+}
+
+.news-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: -15px;
+}
+
+.a-news-holder {
+    margin-top: 50px;
+}
+
+.a-news {
+    border: 1px solid maroon;
+    padding: 2% 5%;
+    text-decoration: none;
+    transition: background-color .4s ease-in-out, color .3s ease-in-out;
+}
+
+.a-news1 {
+    margin-right: 15px;
+}
+
+.a-news:hover {
+    background-color: grey;
+    color: white;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px;
+    column-gap: 2px;
+    
+    color: white;
+}
+
+.links div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: blue;
+    margin-bottom: 2px;
+    transition: background-color .4s ease-in-out;
+}
+
+.linkses-divs:hover {
+    cursor: pointer;
+    background-color: rgba(115, 115, 241, 0.918);
+}
+
+.foot {
+    background-color: blue;
+    color: white;
+    margin-top: 2px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr auto 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.foot > div {
+    line-height: 27px;
+    padding: 15px;
+}
+
+.foot hr {
+    width: 90%;
+}
+
+.cont-lst {
+    overflow:hidden;
+}
+
+.cont-lst li{
+    position: relative;
+    overflow: hidden;
+}
+
+.cont-lst a{
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    overflow: hidden;
+}
+
+.cont-grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    row-gap: 10px;
+}
+
+.cont-grid img {
+    border: 2px solid rgb(77, 77, 77);
+    padding: 10px 25px;
+    transition: background-color .4s ease-in-out;
+}
+
+.cont-grid img:hover {
+    background-color: white;
+}
+
+@media (max-width: 900px) {
+
+    header {
+        width: 100%;
+        
+    }
+    .hero article {
+        width: 100%;
+        height: 250px;
+    }
+
+    .hero article div {
+        width: 400px;
+        top: 180px;
+        left: 10px;
+    }
+
+    .honors {
+        margin-inline: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px;
+    }
+
+    .hon-1, .hon-2 {
+        border-bottom: 1px groove yellow;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-div3, .gallery-div4 {
+        display: none;
+    }
+
+    .flexer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .news-intro {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .news-intro {
+        height: fit-content;
+        margin-bottom: 10px;
+    }
+
+    .form-like, .a-news-holder {
+        display: block;
+        
+    }
+
+    .a-news-holder {
+        height: 57px;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .fcontgr {
+        text-align: center;
+    }
+
+    main {
+        padding-inline: 10px;
+    }
+}

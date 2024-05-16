@@ -1,0 +1,63 @@
+main {
+    padding-inline: 70px;
+}
+
+main h1 {
+    font-size :3rem;
+    color: blue;
+    margin-block: 15px;
+}
+
+b {
+    margin-block: 5px;
+}
+
+.contact-p {
+    line-height: 27px;
+    margin-block: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grider {
+    margin-block: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    line-height: 20px;
+}
+
+.gateway {
+    display: inline-block;
+    background-color:blue;
+    padding: 12px 14px;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid;
+}
+
+.gateway2 {
+    background-color: cyan;
+    color: blue;
+    transition: background-color .4s ease-in-out;
+}
+
+.gateway2:hover {
+    background-color: bisque;
+}
+
+.gateway1,
+.gateway3 {
+    transition: all .4s ease-in-out;
+}
+
+.gateway1:hover,
+.gateway3:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.direct-p {
+    font-size: 1.1rem;
+    margin-block: 15px;
+}

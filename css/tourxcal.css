@@ -1,0 +1,52 @@
+.t-header {
+    height: 130px;
+    background-color: blue;
+    display: flex;
+    
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+main {
+    padding-inline: 155px;
+    padding-top: 75px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p-11 {
+    line-height: 26px;
+}
+
+.p-22 {
+    margin-block: 20px;
+}
+
+.lg-keyer div {
+    margin-block: 3px;
+}
+
+.legend-txt {
+    font-weight: 600;
+}
+.key-elem {
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+}
+
+.key-elem1 {
+    background-color: greenyellow;
+}
+
+.key-elem2 {
+    background-color: grey;
+}
+
+.key-holder {
+    display: flex;
+    gap: 3px;
+}

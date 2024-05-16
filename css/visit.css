@@ -1,0 +1,26 @@
+main {
+    padding-inline: 25px;
+}
+
+main h1 {
+    font-size :3rem;
+    margin-left: 12px;
+    margin-block: 20px;
+}
+
+.p-1, .p-2 {
+    line-height: 25px;
+}
+
+.gateway {
+    display: inline-block;
+    background-color: cyan;
+    padding: 12px 14px;
+    color: black;
+    text-decoration: none;
+    margin-block: 25px;
+}
+
+.p-2 {
+    margin-bottom: 20px;
+}

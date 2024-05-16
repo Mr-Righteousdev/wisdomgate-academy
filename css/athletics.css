@@ -1,0 +1,101 @@
+main {
+    padding-inline: 60px;
+}
+
+.schedule {
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.164);
+    height: auto;
+    margin-top: 20px;
+    padding-bottom: 35px;
+}
+
+.schedule h2 {
+    color: blue;
+    font-size: 1.7rem;
+}
+
+.calender-grid {
+    padding-inline: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cal-inner {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    padding-block: 15px;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.month {
+    font-size: 0.95rem;
+}
+
+.day {
+    font-size: 1.98rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: blue;
+}
+
+.game {
+    color: blue;
+    font-size: 1.6rem;
+}
+
+.time {
+    margin-block: 12px;
+}
+
+.news-gall {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 25px;
+    align-items: center;
+    margin-block: 35px;
+}
+
+.picturer-news {
+    background-color: blue;
+    height: 400px;
+}
+
+.news4 {
+    border-top: 1px solid yellow;
+}
+
+aside {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.last-btn {
+    color: blue;
+    background-color: white;
+    padding: 20px 25px;
+    border: 1px solid blue;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+@media (max-width: 900px) {
+    .calender-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-gall {
+        grid-template-columns: 1fr;
+    }
+}
